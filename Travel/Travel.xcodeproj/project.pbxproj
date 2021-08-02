@@ -13,6 +13,10 @@
 		7348468326B7FB09008784A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7348468126B7FB09008784A8 /* Main.storyboard */; };
 		7348468526B7FB0B008784A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7348468426B7FB0B008784A8 /* Assets.xcassets */; };
 		7348468826B7FB0B008784A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7348468626B7FB0B008784A8 /* LaunchScreen.storyboard */; };
+		7348469026B818E2008784A8 /* loginviewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7348468F26B818E2008784A8 /* loginviewcontroller.swift */; };
+		7348469226B81903008784A8 /* signupviewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7348469126B81903008784A8 /* signupviewcontroller.swift */; };
+		7348469426B8191E008784A8 /* homeviewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7348469326B8191E008784A8 /* homeviewcontroller.swift */; };
+		7348469626B81972008784A8 /* splash1viewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7348469526B81972008784A8 /* splash1viewcontroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		7348468426B7FB0B008784A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7348468726B7FB0B008784A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7348468926B7FB0B008784A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7348468F26B818E2008784A8 /* loginviewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginviewcontroller.swift; sourceTree = "<group>"; };
+		7348469126B81903008784A8 /* signupviewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupviewcontroller.swift; sourceTree = "<group>"; };
+		7348469326B8191E008784A8 /* homeviewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeviewcontroller.swift; sourceTree = "<group>"; };
+		7348469526B81972008784A8 /* splash1viewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splash1viewcontroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +67,24 @@
 				7348467B26B7FB09008784A8 /* AppDelegate.swift */,
 				7348467D26B7FB09008784A8 /* SceneDelegate.swift */,
 				7348467F26B7FB09008784A8 /* ViewController.swift */,
+				7348469726B8197A008784A8 /* viewcontrollers */,
 				7348468126B7FB09008784A8 /* Main.storyboard */,
 				7348468426B7FB0B008784A8 /* Assets.xcassets */,
 				7348468626B7FB0B008784A8 /* LaunchScreen.storyboard */,
 				7348468926B7FB0B008784A8 /* Info.plist */,
 			);
 			path = Travel;
+			sourceTree = "<group>";
+		};
+		7348469726B8197A008784A8 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				7348469326B8191E008784A8 /* homeviewcontroller.swift */,
+				7348469126B81903008784A8 /* signupviewcontroller.swift */,
+				7348468F26B818E2008784A8 /* loginviewcontroller.swift */,
+				7348469526B81972008784A8 /* splash1viewcontroller.swift */,
+			);
+			path = viewcontrollers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7348469626B81972008784A8 /* splash1viewcontroller.swift in Sources */,
+				7348469226B81903008784A8 /* signupviewcontroller.swift in Sources */,
+				7348469426B8191E008784A8 /* homeviewcontroller.swift in Sources */,
+				7348469026B818E2008784A8 /* loginviewcontroller.swift in Sources */,
 				7348468026B7FB09008784A8 /* ViewController.swift in Sources */,
 				7348467C26B7FB09008784A8 /* AppDelegate.swift in Sources */,
 				7348467E26B7FB09008784A8 /* SceneDelegate.swift in Sources */,
