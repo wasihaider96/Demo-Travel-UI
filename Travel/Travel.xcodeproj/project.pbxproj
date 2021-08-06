@@ -15,9 +15,14 @@
 		7348468826B7FB0B008784A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7348468626B7FB0B008784A8 /* LaunchScreen.storyboard */; };
 		7348469426B8191E008784A8 /* homeviewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7348469326B8191E008784A8 /* homeviewcontroller.swift */; };
 		7348469626B81972008784A8 /* splash1viewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7348469526B81972008784A8 /* splash1viewcontroller.swift */; };
+		7356F51826BD5F25007A14A0 /* SignuppageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7356F51726BD5F25007A14A0 /* SignuppageViewController.swift */; };
 		736DF06C26B9463700D4116F /* roundbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736DF06B26B9463700D4116F /* roundbutton.swift */; };
 		738A094226BC172F006F7AF9 /* GuideTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A094126BC172F006F7AF9 /* GuideTwoViewController.swift */; };
 		738A094426BC186C006F7AF9 /* guidethreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A094326BC186C006F7AF9 /* guidethreeViewController.swift */; };
+		739CD73926BD0FD200E80B85 /* Login1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CD73826BD0FD200E80B85 /* Login1ViewController.swift */; };
+		739CD73B26BD17E400E80B85 /* login2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CD73A26BD17E400E80B85 /* login2.swift */; };
+		739CD73D26BD38B800E80B85 /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CD73C26BD38B800E80B85 /* StoryBoard.swift */; };
+		739CD73F26BD399800E80B85 /* AppSingelton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CD73E26BD399800E80B85 /* AppSingelton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +36,14 @@
 		7348468926B7FB0B008784A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7348469326B8191E008784A8 /* homeviewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeviewcontroller.swift; sourceTree = "<group>"; };
 		7348469526B81972008784A8 /* splash1viewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splash1viewcontroller.swift; sourceTree = "<group>"; };
+		7356F51726BD5F25007A14A0 /* SignuppageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignuppageViewController.swift; sourceTree = "<group>"; };
 		736DF06B26B9463700D4116F /* roundbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundbutton.swift; sourceTree = "<group>"; };
 		738A094126BC172F006F7AF9 /* GuideTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideTwoViewController.swift; sourceTree = "<group>"; };
 		738A094326BC186C006F7AF9 /* guidethreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guidethreeViewController.swift; sourceTree = "<group>"; };
+		739CD73826BD0FD200E80B85 /* Login1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login1ViewController.swift; sourceTree = "<group>"; };
+		739CD73A26BD17E400E80B85 /* login2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login2.swift; sourceTree = "<group>"; };
+		739CD73C26BD38B800E80B85 /* StoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
+		739CD73E26BD399800E80B85 /* AppSingelton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSingelton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,11 @@
 				7348468626B7FB0B008784A8 /* LaunchScreen.storyboard */,
 				738A094126BC172F006F7AF9 /* GuideTwoViewController.swift */,
 				738A094326BC186C006F7AF9 /* guidethreeViewController.swift */,
+				739CD73826BD0FD200E80B85 /* Login1ViewController.swift */,
+				739CD73A26BD17E400E80B85 /* login2.swift */,
+				739CD73C26BD38B800E80B85 /* StoryBoard.swift */,
+				739CD73E26BD399800E80B85 /* AppSingelton.swift */,
+				7356F51726BD5F25007A14A0 /* SignuppageViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -161,13 +176,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				736DF06C26B9463700D4116F /* roundbutton.swift in Sources */,
+				739CD73F26BD399800E80B85 /* AppSingelton.swift in Sources */,
 				7348469626B81972008784A8 /* splash1viewcontroller.swift in Sources */,
+				739CD73D26BD38B800E80B85 /* StoryBoard.swift in Sources */,
+				739CD73B26BD17E400E80B85 /* login2.swift in Sources */,
 				7348469426B8191E008784A8 /* homeviewcontroller.swift in Sources */,
+				739CD73926BD0FD200E80B85 /* Login1ViewController.swift in Sources */,
 				7348468026B7FB09008784A8 /* ViewController.swift in Sources */,
 				7348467C26B7FB09008784A8 /* AppDelegate.swift in Sources */,
 				738A094226BC172F006F7AF9 /* GuideTwoViewController.swift in Sources */,
 				738A094426BC186C006F7AF9 /* guidethreeViewController.swift in Sources */,
 				7348467E26B7FB09008784A8 /* SceneDelegate.swift in Sources */,
+				7356F51826BD5F25007A14A0 /* SignuppageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

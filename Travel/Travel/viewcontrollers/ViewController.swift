@@ -8,9 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var roundsidebuttion: UIButton!
     @IBOutlet weak var imgsplash1: UIImageView!
-    
     @IBOutlet weak var roundbutton: UIButton!
     
     override func viewDidLayoutSubviews() {
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         
         roundbutton.layer.cornerRadius = roundbutton.frame.width/2
         
-        roundsidebuttion.layer.cornerRadius = 25.0
+        roundsidebuttion.layer.cornerRadius = 23.0
         roundsidebuttion.layer.borderWidth = 2
         roundsidebuttion.layer.borderColor = #colorLiteral(red: 0.2387692198, green: 0.4335318844, blue: 1, alpha: 1)
         
@@ -31,18 +31,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = true
+        
     }
-    @IBAction func didTapbutton() {
+    
+    @IBAction func firsttap(_ sender: UIButton) {
         if let vc = storyboard?.instantiateViewController(identifier: "GuideTwoViewController") as? GuideTwoViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
-    @IBAction func nextbuttontap(_ sender: UIButton) {
-    }
-    @IBAction func didTapButton() {
-                
+    @IBAction func skipbutton(_ sender: UIButton) {
+        if let vc = storyboard?.instantiateViewController(identifier: "Login1ViewController") as? Login1ViewController {
+            self.navigationController?.pushViewController(vc, animated: true)
         
-        }
-
     }
+    }
+}
