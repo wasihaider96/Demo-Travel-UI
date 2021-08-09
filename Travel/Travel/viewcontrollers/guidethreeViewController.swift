@@ -7,7 +7,7 @@
 
 import UIKit
 
-class guidethreeViewController: UIViewController {
+class guidethreeViewController: NavigationController {
     
     @IBOutlet weak var imagesplash3: UIImageView!
     @IBOutlet weak var roundsidebutton: UIButton!

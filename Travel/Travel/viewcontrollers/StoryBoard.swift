@@ -16,4 +16,7 @@ enum StoryboardReference: String {
 enum ViewControllerReference: String {
     case Login1ViewController
     case login2
+    case SignuppageViewController
+    case enterphonenoViewController
+    case recoverpassViewController
 }

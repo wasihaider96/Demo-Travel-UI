@@ -8,7 +8,7 @@
 import UIKit
 
 
-class login2: UIViewController {
+class login2: NavigationController {
     
     @IBOutlet weak var emailtextfield: UITextField!
     @IBOutlet weak var passrextfield: UITextField!
@@ -16,16 +16,23 @@ class login2: UIViewController {
     
 
     override func viewDidLoad() {
+        super.viewDidLoad()
         loginbtntapped.layer.cornerRadius = 23.0
         loginbtntapped.layer.borderWidth = 2
         loginbtntapped.layer.borderColor = #colorLiteral(red: 0.2387692198, green: 0.4335318844, blue: 1, alpha: 1)
-        super.viewDidLoad()
-    }
-
-    @IBAction func backbtnpressed(_ sender: UIButton) {
-         self.navigationController?.popViewController(animated: true)
-    }
+        self.enableButton(.Singup)
 }
-
+@IBAction func signupbtntped(_ sender: UIButton) {
+        guard let view = AppSingleton.shared.navigateView(viewRef: .SignuppageViewController, storyboard: .Main) as? SignuppageViewController else {
+                return
+            }
+      }
+    @IBAction func forgetpassbtntaped(_ sender: UIButton) {
+        guard let view = AppSingleton.shared.navigateView(viewRef: .recoverpassViewController, storyboard: .Main) as? recoverpassViewController else {
+                return
+            }
+        self.navigationController?.pushViewController(view, animated: true)
+      }
+}
     
 

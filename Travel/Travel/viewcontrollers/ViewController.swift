@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: NavigationController {
     
     @IBOutlet weak var roundsidebuttion: UIButton!
     @IBOutlet weak var imgsplash1: UIImageView!

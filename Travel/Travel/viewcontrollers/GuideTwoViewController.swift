@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GuideTwoViewController: UIViewController {
+class GuideTwoViewController: NavigationController {
     
     @IBOutlet weak var imgsplash2: UIImageView!
     @IBOutlet weak var roundsidebutton: UIButton!

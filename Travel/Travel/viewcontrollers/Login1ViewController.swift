@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Login1ViewController: UIViewController {
+class Login1ViewController: NavigationController {
  
     @IBOutlet weak var loginbutton: UIButton!
     @IBOutlet weak var signupbutton: UIButton!
@@ -34,6 +34,11 @@ class Login1ViewController: UIViewController {
         }
         self.navigationController?.pushViewController(view, animated: true)
     }
+    @IBAction func signupbtntapped(_ sender: UIButton) {
+        guard let view = AppSingleton.shared.navigateView(viewRef: .SignuppageViewController, storyboard: .Main) as? SignuppageViewController else {
+                return
+            }
+            self.navigationController?.pushViewController(view, animated: true)
+        }
     
-
 }
