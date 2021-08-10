@@ -18,6 +18,7 @@ class NavigationController: UIViewController {
     // MARK: - IBOutlets
     
     // MARK: - Variables
+    private var clickHandler: ((Int) -> Void)?
     private var type: BarButtonType = .Login
     let classBtn = UIButton(type: .system)
     lazy var classBarItem: Array = { () -> [UIBarButtonItem] in
@@ -29,7 +30,7 @@ class NavigationController: UIViewController {
         let clasBarButton = UIBarButtonItem(customView: classBtn)
         return [clasBarButton]
     }()
-
+    
     // MARK: - Constants
     
     // MARK: - View LifeCycle
@@ -56,21 +57,25 @@ class NavigationController: UIViewController {
             break
         case .Skip:
             self.classBtn.setTitle("Skip", for: .normal)
+            classBtn.tintColor = .gray
+            classBtn.imageEdgeInsets = UIEdgeInsets(top: 81, left: 0, bottom: 0, right: 37)
+            classBtn.frame = CGRect(x: 0, y: 0, width: 26, height: 17)
             break
         }
     }
-    
     // MARK: - Navigation / IBActions
     @objc func classBtnTapped() {
+        guard let completion = self.clickHandler else {return}
+                
         switch type {
         case .Login:
-            
+            completion(0)
             break
         case .Singup:
-            
+            completion(1)
             break
         case .Skip:
-            
+            completion(2)
             break
         }
     }
@@ -84,6 +89,10 @@ class NavigationController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
+    }
+    
+    func watchForClickHandler(completion: @escaping (Int) -> Void) {
+        self.clickHandler = completion
     }
 }
 

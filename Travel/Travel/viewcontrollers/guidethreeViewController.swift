@@ -25,18 +25,24 @@ class guidethreeViewController: NavigationController {
         
         imagesplash3.layer.cornerRadius = 5
         imagesplash3.clipsToBounds = true
+    
+        self.enableButton(.Skip)
+        self.watchForClickHandler { tag in
+            if tag == 2 {
+                // action performed
+                guard let view = AppSingleton.shared.navigateView(viewRef: .Login1ViewController, storyboard: .Main) as? Login1ViewController else {
+                    return
+                }
+                self.navigationController?.pushViewController(view, animated: true)
+            }
+        }
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func skipbtntapped(_ sender: UIButton) {
-        if let vc = storyboard?.instantiateViewController(identifier: "Login1ViewController") as? Login1ViewController {
-            self.navigationController?.pushViewController(vc, animated: true)
-           }
-    }
-    
     @IBAction func nextbtntapped(_ sender: UIButton) {
         if let vc = storyboard?.instantiateViewController(identifier: "Login1ViewController") as? Login1ViewController {
             self.navigationController?.pushViewController(vc, animated: true)
