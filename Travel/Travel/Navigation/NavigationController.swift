@@ -16,8 +16,13 @@ enum BarButtonType {
 class NavigationController: UIViewController {
     
     // MARK: - IBOutlets
-    
     // MARK: - Variables
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+    }
+    
     private var clickHandler: ((Int) -> Void)?
     private var type: BarButtonType = .Login
     let classBtn = UIButton(type: .system)
@@ -90,7 +95,6 @@ class NavigationController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
     }
-    
     func watchForClickHandler(completion: @escaping (Int) -> Void) {
         self.clickHandler = completion
     }

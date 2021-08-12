@@ -13,6 +13,7 @@ class Login1ViewController: NavigationController {
     @IBOutlet weak var signupbutton: UIButton!
     
     override func viewDidLayoutSubviews() {
+        
         loginbutton.layer.cornerRadius = 23.0
         loginbutton.layer.borderWidth = 2
         loginbutton.layer.borderColor = #colorLiteral(red: 0.2387692198, green: 0.4335318844, blue: 1, alpha: 1)
@@ -24,8 +25,16 @@ class Login1ViewController: NavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
     
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+
     
 
     @IBAction func loginBtnTapped(_ sender: UIButton) {

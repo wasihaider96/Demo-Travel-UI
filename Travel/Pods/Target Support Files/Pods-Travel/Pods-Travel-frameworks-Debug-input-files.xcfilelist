@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Travel/Pods-Travel-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework
+${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework
+${BUILT_PRODUCTS_DIR}/SKCountryPicker/SKCountryPicker.framework

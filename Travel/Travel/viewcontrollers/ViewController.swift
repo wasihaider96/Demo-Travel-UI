@@ -12,8 +12,12 @@ class ViewController: NavigationController {
     @IBOutlet weak var roundsidebuttion: UIButton!
     @IBOutlet weak var imgsplash1: UIImageView!
     @IBOutlet weak var roundbutton: UIButton!
+
     
     override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+      
+        navigationItem.titleView = pageControl
         
         roundbutton.setImage(UIImage(named: "navplus.png"), for: .normal)
         roundbutton.imageEdgeInsets = UIEdgeInsets(top:5, left: 5, bottom: 5, right: 5)
@@ -39,10 +43,19 @@ class ViewController: NavigationController {
             }
         }
 }
+    private let pageControl: UIPageControl = {
+        let pageControl = UIPageControl()
+        pageControl.numberOfPages = 3
+        pageControl.currentPage = 0
+        pageControl.backgroundColor = .clear
+        pageControl.pageIndicatorTintColor = UIColor.lightGray;
+        pageControl.currentPageIndicatorTintColor = UIColor.blue;
+        return pageControl
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.addSubview(pageControl)
     }
     
     @IBAction func firsttap(_ sender: UIButton) {

@@ -20,7 +20,6 @@
 		735BBF5326C0EFDA00B0FA15 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735BBF5226C0EFDA00B0FA15 /* NavigationController.swift */; };
 		735BBF5726C12EFF00B0FA15 /* enterphonenoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735BBF5626C12EFF00B0FA15 /* enterphonenoViewController.swift */; };
 		735BBF5926C14F1A00B0FA15 /* recoverpassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735BBF5826C14F1A00B0FA15 /* recoverpassViewController.swift */; };
-		736DF06C26B9463700D4116F /* roundbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736DF06B26B9463700D4116F /* roundbutton.swift */; };
 		738A094226BC172F006F7AF9 /* GuideTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A094126BC172F006F7AF9 /* GuideTwoViewController.swift */; };
 		738A094426BC186C006F7AF9 /* guidethreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A094326BC186C006F7AF9 /* guidethreeViewController.swift */; };
 		739CD73926BD0FD200E80B85 /* Login1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CD73826BD0FD200E80B85 /* Login1ViewController.swift */; };
@@ -46,7 +45,6 @@
 		735BBF5226C0EFDA00B0FA15 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		735BBF5626C12EFF00B0FA15 /* enterphonenoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enterphonenoViewController.swift; sourceTree = "<group>"; };
 		735BBF5826C14F1A00B0FA15 /* recoverpassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recoverpassViewController.swift; sourceTree = "<group>"; };
-		736DF06B26B9463700D4116F /* roundbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundbutton.swift; sourceTree = "<group>"; };
 		738A094126BC172F006F7AF9 /* GuideTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideTwoViewController.swift; sourceTree = "<group>"; };
 		738A094326BC186C006F7AF9 /* guidethreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guidethreeViewController.swift; sourceTree = "<group>"; };
 		739CD73826BD0FD200E80B85 /* Login1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login1ViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				7348467F26B7FB09008784A8 /* ViewController.swift */,
 				7348469326B8191E008784A8 /* homeviewcontroller.swift */,
 				7348469526B81972008784A8 /* splash1viewcontroller.swift */,
-				736DF06B26B9463700D4116F /* roundbutton.swift */,
 				7348468626B7FB0B008784A8 /* LaunchScreen.storyboard */,
 				738A094126BC172F006F7AF9 /* GuideTwoViewController.swift */,
 				738A094326BC186C006F7AF9 /* guidethreeViewController.swift */,
@@ -260,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				736DF06C26B9463700D4116F /* roundbutton.swift in Sources */,
 				739CD73F26BD399800E80B85 /* AppSingelton.swift in Sources */,
 				7348469626B81972008784A8 /* splash1viewcontroller.swift in Sources */,
 				739CD73D26BD38B800E80B85 /* StoryBoard.swift in Sources */,

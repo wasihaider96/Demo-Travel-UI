@@ -15,9 +15,22 @@ class GuideTwoViewController: NavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.addSubview(pageControl)
+        self.navigationItem.setHidesBackButton(true, animated: false)
+        let logoContainer = UIView(frame: CGRect(x: 0, y: 0, width: 39, height: 8))
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 39, height: 8))
+        imageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: "Image.png")
+        imageView.image = image
+        logoContainer.addSubview(imageView)
+        navigationItem.titleView = logoContainer
 
 }
     override func viewDidLayoutSubviews() {
+        navigationItem.titleView = pageControl
+        
+        
         roundsidebutton.layer.cornerRadius = 23.0
         roundsidebutton.layer.borderWidth = 2
         roundsidebutton.layer.borderColor = #colorLiteral(red: 0.2387692198, green: 0.4335318844, blue: 1, alpha: 1)
@@ -41,7 +54,15 @@ class GuideTwoViewController: NavigationController {
         }
         //self.navigationController?.popViewController(animated: true)
     }
-    
+    private let pageControl: UIPageControl = {
+        let pageControl = UIPageControl()
+        pageControl.numberOfPages = 3
+        pageControl.currentPage = 1
+        pageControl.backgroundColor = .clear
+        pageControl.pageIndicatorTintColor = UIColor.lightGray;
+        pageControl.currentPageIndicatorTintColor = UIColor.blue;
+        return pageControl
+    }()
     
 
     @IBAction func nexttapped(_ sender: UIButton) {

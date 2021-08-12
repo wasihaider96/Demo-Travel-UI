@@ -1,0 +1,24 @@
+PODS:
+  - DynamicBlurView (4.1.0)
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
+  - SKCountryPicker (1.3.2)
+
+DEPENDENCIES:
+  - PopupDialog
+  - SKCountryPicker
+
+SPEC REPOS:
+  trunk:
+    - DynamicBlurView
+    - PopupDialog
+    - SKCountryPicker
+
+SPEC CHECKSUMS:
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
+  SKCountryPicker: ceff8cfffc0ddde2088f2fcc2d01d1ad530c0b03
+
+PODFILE CHECKSUM: e4051f7607f83943494a0deb932127008398caac
+
+COCOAPODS: 1.10.1
